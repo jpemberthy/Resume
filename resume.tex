@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{fullpage}
 \usepackage{amsmath} \usepackage{amssymb} \usepackage{url} \textheight=10in
+\usepackage{hyperref}
 \pagestyle{empty}
 % \raggedbottom
 \raggedright
@@ -23,7 +24,7 @@
   \vspace*{-8pt} }
 \newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
       -2pt}}{\vspace*{4pt}\end{list}} \newcommand{\schoolwithcourses}[4]{
-  \textbf{#1} #2 \\ #3\\ #4 \\ Selected Coursework:\\
+  \textbf{#1} #2 \\ #3\\ #4 \\
   \vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
   \\ }
 % END RESUME DEFINITIONS
@@ -34,53 +35,57 @@
 \smallskip
 \vspace*{-44pt}
 
-\contact{Juan Pemberthy} { Address: 1652 Dolores St
-  Phone: (+1) 415 535 9740} { $\bullet$ juan@pemberthy.com $\bullet$
-  juan.pemberthy.com }
+\contact{Juan Pemberthy} { Boston, Massachusetts +1 415-535-9740}
+        { $\bullet$ juan@pemberthy.com $\bullet$
+          juan.pemberthy.com
+        }
 
 \header{Work History}
 
-\employer{Uber Technologies}{November 2014 - Present}{Software Engineer}
+\employer{GitHub - Boston, MA}{January 2019 - Present}{Senior Software Engineer}
 \begin{achievements}
-\item Developed and maintained the first generation of systems of the Uber External API. Such services included: the OAuth2.0 provider, the external API backend itself, the sandbox and a webhooks service.
-\item Designed and developed the second generation of the Uber external API platform.
-\item Developed a high level testing tool to guarantee consistency of the API endpoints in different environments: regular and sandbox.
-\item Currently working on supply positioning.
+\item Contributed to the ecosystem-apps team, focusing on programmatic access technologies including GitHub Apps, OAuth Apps, and Personal Access Tokens.
+\item Designed and developed Global Apps, a scalable solution that powers GitHub's globally available products like GitHub Actions, Copilot, Dependabot, and Codespaces.
+\item Spearheaded the design and implementation of robust observability, monitoring, and availability tooling for programmatic access.
+\item Successfully restructured the API authorization logic to improve maintainability of this layer, which serves billions of daily requests.
+\item Implemented and released the second generation of Personal Access Tokens, enhancing security and usability.
 \end{achievements}
 
-\employer{We Heart It}{May 2012 - Present}{Software Engineer}
+\employer{Uber Technologies - San Francisco, CA}{November 2014 - January 2019}{Senior Software Engineer II}
 \begin{achievements}
-\item At weheartit I designed and developed the internal API, this service supports the iOS and Android mobile applications.
-\item Developed and scaled systems to publish millions of hearts (likes) to thousands of user dashboards.
-\item Developed the images uploads service.
-\item These services were built on top of diverse tools like: Ruby, Ruby on Rails, MySQL, Redis, Lua, Cassandra, node.js and RabbitMQ.
-\item It was also my responsibility to work on the development of new features and bugs fixes.
+\item Developed and maintained the first-generation systems for Uber's External API, including the OAuth2.0 provider, API backend, sandbox, and webhooks service.
+\item Designed and developed the second generation of Uber's External API platform.
+\item Created a high-level testing tool to ensure API endpoint consistency across various environments, including production and sandbox.
+\item Designed, developed and owned the backend system powering positioning suggestions for Uber drivers.
+\item Contributed to the backend development of the Uber driver app, focusing on suggestions and estimated time of requests.
 \end{achievements}
 
-\employer{Stack Builders Inc}{November 2010 - March 2012}{Software Engineer}
+\employer{We Heart It - San Francisco, CA}{May 2012 - November 2014}{Senior Software Engineer}
 \begin{achievements}
-\item As a Stack Builders contractor, I developed a micro messaging social network based on geolocation along with private applications for the finance leaders sector. The main stack components to build these services were Ruby on Rails, MySQL and MongoDB.
+\item Designed and developed the internal API that supports both the iOS and Android mobile applications.
+\item Developed and scaled systems to distribute millions of "hearts" (likes) across thousands of user dashboards.
+\item Created the image upload service to streamline media management.
+\item Used a diverse set of tools for service development, including Ruby, Ruby on Rails, MySQL, Redis, Lua, Cassandra, Node.js, and RabbitMQ.
 \end{achievements}
 
-\employer{Martian Interactive LLC}{March 2009 - November 2010}{Software Engineer}
+\employer{Stack Builders Inc - Remote}{November 2010 - March 2012}{Software Engineer}
 \begin{achievements}
-\item As a Martian Interactive contractor, I developed applications for clients in the educational, transportation and life coaching industries. Main tech components use to build the services: Ruby on Rails, MySQL and MongoDB.
+\item Developed a geolocation-based micro-messaging social network as well as private applications tailored for the financial leaders sector. The primary technologies used in building these services were Ruby on Rails, MySQL, and MongoDB.
 \end{achievements}
 
-\employer{Eureka Facts LLC}{January 2008 - July 2008}{Software Engineer Intern}
+\employer{Eureka Facts LLC - Rockville, MD}{2009}{Software Engineer Intern}
 \begin{achievements}
 \item Conducted survey programming, online data capture, web development and business intelligence tool customization.
 \end{achievements}
 
-\header{Open Source and Personal Projects}
+\header{Open Source, Personal Projects and Publications}
 \begin{achievements}
+\item \href{https://web.tecgraf.puc-rio.br/~abraposo/pubs/SVR2008/SVR2008_full_proceedings.pdf}{Telepresence: A tool for distance education} Pemberthy et al. 2008 – X Symposium on Virtual and Augmented Reality.
+\item \url{https://github.com/jpemberthy/} for all my open source projects.
 \item \url{http://timehub.me/} - Invoicing for GitHub. Winner of the 2011 Rally on Rails.
 \item \url{http://bolsaenred.com/} - A Community for people investing in the Colombian Stock Exchange.
 \item \url{https://github.com/jpemberthy/uber-activity} -A sinatra application that makes use of the Uber API to show your recent rides info and stats.
-\item \url{http://github.com/jpemberthy/marianita/} - An API to detect and persist the most relevant events of your FB, Instagram and Twitter.
-\item \url{http://github.com/jpemberthy/aria_api} - Ruby wrapper for the Aria billing system API.
-\item \url{http://ezgraphixdemo.heroku.com/} - A Rails 2.3 plugin to generate chart graphics.
-\item \url{http://github.com/jpemberthy/} - Other projects.
+\item \url{https://github.com/jpemberthy/ezgraphix} - A Rails plugin to generate chart graphics.
 \end{achievements}
 
 \header{Education}
@@ -88,15 +93,7 @@
 \schoolwithcourses{Universidad EAFIT (Medell\'in, Colombia)}{}
 {2010 Bachelor in Computer Science}
 {Current Cumulative (GPA): 4.23/5}
-\area{Computer Science:}{
-  Computer Graphics $\cdot$ Distributed Virtual Reality $\cdot$ Programming Languages
-  $\cdot$ Data Structures and Algorithms $\cdot$ Automata \& Computation $\cdot$
-  Numerical Analysis $\cdot$ Databases $\cdot$ Operating Systems
-  $\cdot$ Computer Architecture $\cdot$ Compilers $\cdot$ Distributed Systems}
 \smallskip
 \vspace*{10pt}
-\area{Mathematics:}{Multivariable Calculus $\cdot$ Linear Algebra $\cdot$ Discrete
-  Math $\cdot$ Physics $\cdot$ Statistics  $\cdot$
-  Operations Research}
 
 \end{document}
